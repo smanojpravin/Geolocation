@@ -26,7 +26,7 @@ SECRET_KEY = '(2rk1!a+*if!$o%m3-vb6criplsp0q90x=4o3d5$zx=u$dkc5a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mano-geloc.herokuapp.com']
 
 
 # Application definition
