@@ -1,1 +1,1 @@
-web: gunicorn gelocation.wsgi --log-file -
+web: gunicorn goelocation.wsgi --log-file -
