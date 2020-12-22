@@ -1,0 +1,1 @@
+web: gunicorn gelocation.wsgi --log-file -
