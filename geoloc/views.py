@@ -3,7 +3,8 @@ import requests
 
 
 def home(request):
-    response = requests.get('http://api.ipstack.com/check?access_key=d695eb1c16c74da8ddfdd76f2f77381e')
+    ip_address = request.META.get('HTTP_X_FORWARDED_FOR','')
+    response = requests.get('http://api.ipstack.com/%s?access_key=d695eb1c16c74da8ddfdd76f2f77381e'%ip_address)
     print(response)
     geodata = response.json()
     print(geodata)
